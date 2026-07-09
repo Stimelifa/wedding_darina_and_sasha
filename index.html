@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дарина & Саша — свадебное приглашение</title>
+
+    <link href="https://db.onlinewebfonts.com/c/1efc9dc7414e979667bdca47989dff12?family=NauryzRedKeds" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="invite">
+    <section class="hero paper-section">
+
+            <img src="images/ei_vi.png"
+     alt="Эй, как вас там: Дарина и Саша"
+     class="hero-title">
+
+        <div class="hero-grid">
+
+            <div class="child child-left">
+                <img src="images/bride-child.png" alt="Фото невесты в детстве">
+            </div>
+
+            <div class="title-block">
+
+                <img src="images/wedding_big.png"
+                     alt="Свадьбу"
+                     class="wedding-text">
+
+                      <div class="address">
+                    <img src="images/address.png" alt="Адрес" class="address-img">
+                     </div>
+
+                <img src="images/data_svadbi.png"
+                     alt="Дата свадьбы"
+                     class="date-note">
+
+            </div>
+
+            <div class="child child-right">
+                <img src="images/groom-child.png" alt="Фото жениха в детстве">
+            </div>
+
+        </div>
+
+        <div class="mobile-kids">
+    <img src="images/zhenih_i_nevesta.png"
+         alt="Жених и невеста в детстве">
+        </div>
+
+        <img src="images/cat1.png" alt="" class="cat-hero">
+        
+    </section>
+
+
+    <section class="countdown paper-section">
+    <h2 class="countdown-title">
+        До дня свадьбы осталось:
+    </h2>
+     
+        <div class="timer">
+            <div class="timer-card"><span id="days">00</span><small>дней</small></div>
+            <div class="timer-card"><span id="hours">00</span><small>часов</small></div>
+            <div class="timer-card"><span id="minutes">00</span><small>минуты</small></div>
+            <div class="timer-card"><span id="seconds">00</span><small>секунды</small></div>
+        </div>
+    </section>
+
+    <section class="place paper-section">
+
+    <div class="place-content">
+
+        <h2>Где будем отмечать?</h2>
+
+        <p class="place-name">
+            Территория Форт Константин<br>
+            Шатер «Европа»
+        </p>
+
+        <p class="place-address">
+            Санкт-Петербург, Кронштадт,<br>
+            территория Форт Константин
+        </p>
+
+        <a class="map-btn"
+           href="https://yandex.ru/maps/?text=Форт%20Константин%20шатер%20Европа"
+           target="_blank">
+
+            <img src="images/knopka_karta.png"
+                 alt="Показать на карте">
+
+        </a>
+
+    </div>
+
+    <div class="map-card">
+        <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=29.703658%2C59.996076&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMzEyNzkwNzM1EnPQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQmtGA0L7QvdGI0YLQsNC00YIsINGC0LXRgNGA0LjRgtC-0YDQuNGPINCk0L7RgNGCINCa0L7QvdGB0YLQsNC90YLQuNC9IgoN_p3tQRX4-m9C&z=16.84"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+    </div>
+
+</section>
+
+<section class="dresscode paper-section">
+
+    <h2>Дресс-код</h2>
+
+    <div class="colors" aria-label="Цветовая палитра свадьбы">
+        <img src="images/color1.png" alt="">
+        <img src="images/color2.png" alt="">
+        <img src="images/color3.png" alt="">
+        <img src="images/color4.png" alt="">
+    </div>
+
+    <img src="images/bumaga2.png" alt="Дресс-код" class="side-note">
+
+    <img src="images/cat2.png" alt="" class="cat-glasses">
+
+    <p class="handwrite">ждём вас!</p>
+
+</section>
+
+<section class="rsvp paper-section" id="rsvp">
+
+    <h2 class="rsvp-title">
+        Подтвердите,<br>
+        пожалуйста
+    </h2>
+
+    <form 
+class="rsvp-form"
+action="send.php"
+method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Ваше имя"
+            required>
+            <input 
+type="radio"
+name="visit"
+value="Да"
+checked>
+
+<input 
+type="radio"
+name="visit"
+value="Нет">
+
+        <div class="question">
+            Придёте на свадьбу?
+        </div>
+
+        <div class="radio-buttons">
+
+            <label class="choice">
+                <input type="radio"
+                       name="visit"
+                       checked>
+
+                <span>Да!</span>
+            </label>
+
+            <label class="choice">
+                <input type="radio"
+                       name="visit">
+
+                <span>Нет :(</span>
+            </label>
+
+        </div>
+
+        <button type="submit">
+            Отправить
+        </button>
+
+    </form>
+
+</section>
+</main>
+
+<script>
+const weddingDate = new Date("2026-09-10T14:00:00");
+
+function updateCountdown() {
+    const now = new Date();
+    const diff = Math.max(weddingDate - now, 0);
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("days").textContent = String(days).padStart(2, "0");
+    document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+</body>
+</html
